@@ -8,7 +8,7 @@ void setup(){
   /* for (String rapper : rappers){
     println(rapper); */
   //3d
-  for (int i = 0; i < rappers.length - 1; i++){
+  for (int i = 0; i < rappers.length; i++){
     println(i + 1 + ". " + rappers[i] + " : " + hits[i]);
   }
 }
