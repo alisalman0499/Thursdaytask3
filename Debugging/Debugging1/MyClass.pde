@@ -1,7 +1,6 @@
-public class MyClass() {
+class MyClass{
     
-    public MyClass()
-    {
+    MyClass(){
         println("Jobs done!"); 
     }
 }
