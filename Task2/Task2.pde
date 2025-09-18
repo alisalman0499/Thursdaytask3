@@ -1,6 +1,6 @@
 //2b
 void setup(){
-  printPartOfWord("København", 0, 3);
+  printPartOfWord("København", -1, 3);
 }
 
 //2a
@@ -11,5 +11,12 @@ void printPartOfWord(String tempStr, int startIndex, int endIndex){
     return;
   }
   println(tempStr.substring(startIndex, endIndex));
-  
+  //2d v2
+  /*
+    try {
+    println(tempStr.substring(startIndex, endIndex));
+  } catch (StringIndexOutOfBoundsException e) {
+    println("Error: Invalid index, please check your numbers.");
+  }
+  */
 }
