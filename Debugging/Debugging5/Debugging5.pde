@@ -2,13 +2,11 @@ boolean jobsDone = true;
 
 void setup()
 {
-    if (isJobDone())
-    {
-        println("Job's done!") 
+    if (isJobDone()){
+        println("Job's done!");
     }
 }
 
-boolean isJobDone()
-{
+boolean isJobDone(){
     return jobsDone;    
 }
