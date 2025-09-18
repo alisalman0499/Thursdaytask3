@@ -5,7 +5,7 @@ boolean[] booarray = {true, false, true};
 
 void setup(){
   printStrArray(strarray);
-  printIntArray(intarray);
+  println(sumOfInts(intarray));
 }
 
 //7b
@@ -16,6 +16,15 @@ void printStrArray(String[] tempArr){
 }
 
 //7c
+int sumOfInts(int[] tempArr){
+  int sum = 0;
+  for (int temp : tempArr){
+    sum += temp;
+  }
+  return sum;
+}
+
+//7d
 void printIntArray(int[] tempArr){
   for (int temp : tempArr){
     println(temp);
