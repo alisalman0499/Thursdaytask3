@@ -17,7 +17,7 @@ class Circle{
   //4k
   void move(int moveX, int moveY){
     xposition += moveX;
-    moveY += moveY;
+    yposition += moveY;
     display();
   }
 }

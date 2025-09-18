@@ -8,8 +8,11 @@ void setup(){
   for (int i = 0; i < circles.length; i++){
     circles[i] = new Circle(int(random(width)), int(random(height)));
     circles[i].display();
-    
   }
+  for (Circle circle : circles){
+    circle.move(10, 10);
+  }
+  
   /*
   //4e
   circles[0] = new Circle(200, 200);
@@ -17,3 +20,11 @@ void setup(){
   circles[0].display();
   */
 }
+/*
+void draw(){
+  //4l
+  for (Circle circle : circles){
+    circle.move(10, 10);
+  }
+}
+*/
