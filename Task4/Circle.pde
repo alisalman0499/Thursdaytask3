@@ -5,12 +5,12 @@ class Circle{
   
   //4d
   Circle(int tempX, int tempY){
-    int xposition = tempX;
-    int yposition = tempY;
+    xposition = tempX;
+    yposition = tempY;
   }
   
   //4f
-  void display(int xposition, int yposition){
+  void display(){
     ellipse(xposition, yposition, 10, 10);
   }
 }
