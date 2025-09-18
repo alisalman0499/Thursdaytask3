@@ -11,12 +11,12 @@ void setup()
     }
 }
 
-boolean isValueGreaterThanThreshold(int value, int threshold) 
-{
+boolean isValueGreaterThanThreshold(int value, int threshold){
     if (value > threshold) 
     {
         return true;                
     }
+    return false;
 }
 
 boolean isJobDone()
