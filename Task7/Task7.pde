@@ -6,6 +6,7 @@ boolean[] booarray = {true, false, true};
 void setup(){
   printStrArray(strarray);
   println(sumOfInts(intarray));
+  println(averageOfInts(intarray));
 }
 
 //7b
@@ -25,8 +26,11 @@ int sumOfInts(int[] tempArr){
 }
 
 //7d
-void printIntArray(int[] tempArr){
+//7c
+float averageOfInts(int[] tempArr){
+  int sum = 0;
   for (int temp : tempArr){
-    println(temp);
+    sum += temp;
   }
+  return sum / tempArr.length;
 }
