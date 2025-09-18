@@ -5,4 +5,6 @@ void setup(){
 
 //2a
 void printPartOfWord(String tempStr, int startIndex, int endIndex){
+  //2c
+  println(tempStr.substring(startIndex, endIndex));
 }
