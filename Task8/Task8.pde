@@ -1,8 +1,8 @@
 int[] intarray = {10, 213, 21, 4, 9, 12, 32, 5, 6, 70};
 
 void setup(){
-  int[] sortedArray = sortIntArray(intarray);
-  for (int number : sortedArray){
+  int[] newArray = sortIntArray(intarray);
+  for (int number : newArray){
     println(number);
   }
   
