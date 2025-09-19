@@ -1,23 +1,31 @@
 //7a
-int[] intarray = {23, 10, 4};
-String[] strarray = {"Michael", "Jackson", "hello"};
-boolean[] booarray = {true, false, true};
+ArrayList<Integer> intarray = new ArrayList<Integer>();
+ArrayList<String> strarray = new ArrayList<String>();
+ArrayList<Boolean> boolarray = new ArrayList<Boolean>();
 
 void setup(){
+  strarray.add("Michael");
+  strarray.add("Jackson");
+  strarray.add("Hello");
   printStrArray(strarray);
+  
+  intarray.add(23);
+  intarray.add(10);
+  intarray.add(4);
   println(sumOfInts(intarray));
+  
   println(averageOfInts(intarray));
 }
 
 //7b
-void printStrArray(String[] tempArr){
+void printStrArray(ArrayList<String> tempArr){
   for (String temp : tempArr){
     println(temp);
   }
 }
 
 //7c
-int sumOfInts(int[] tempArr){
+int sumOfInts(ArrayList<Integer> tempArr){
   int sum = 0;
   for (int temp : tempArr){
     sum += temp;
@@ -27,10 +35,10 @@ int sumOfInts(int[] tempArr){
 
 //7d
 //7c
-float averageOfInts(int[] tempArr){
+float averageOfInts(ArrayList<Integer> tempArr){
   int sum = 0;
   for (int temp : tempArr){
     sum += temp;
   }
-  return sum / tempArr.length;
+  return sum / tempArr.size();
 }
