@@ -20,11 +20,11 @@ void setup(){
   circles[0].display();
   */
 }
-/*
+
 void draw(){
+  background(0);
   //4l
   for (Circle circle : circles){
-    circle.move(10, 10);
+    circle.move(0.1, 0.1);
   }
 }
-*/

@@ -1,10 +1,10 @@
 //4c
 class Circle{
-  int xposition;
-  int yposition;
+  float xposition;
+  float yposition;
   
   //4d
-  Circle(int tempX, int tempY){
+  Circle(float tempX, float tempY){
     xposition = tempX;
     yposition = tempY;
   }
@@ -15,7 +15,7 @@ class Circle{
   }
   
   //4k
-  void move(int moveX, int moveY){
+  void move(float moveX, float moveY){
     xposition += moveX;
     yposition += moveY;
     display();
