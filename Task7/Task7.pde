@@ -36,9 +36,5 @@ int sumOfInts(ArrayList<Integer> tempArr){
 //7d
 //7c
 float averageOfInts(ArrayList<Integer> tempArr){
-  int sum = 0;
-  for (int temp : tempArr){
-    sum += temp;
-  }
-  return sum / tempArr.size();
+  return sumOfInts(tempArr) / tempArr.size();
 }
